@@ -2,7 +2,8 @@
 ###
 #
 # brute password crackalacker.  useful for anything that uses .htaccess
-# or other basic authentication methods.
+# or other basic authentication methods. - not written by me (uxking)
+# full credit to nwo
 #
 # don't use it for anything stupid.  it's for pentesting.
 # - nwo
