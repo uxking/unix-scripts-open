@@ -2,7 +2,7 @@
 
 # generate random data
 # uses three arguments 
-# first is type - num, alpha, alphanum, or all letters numbers,symbols
+# first is type - num, alpha, alphanum, or all letters, numbers, symbols
 if [[ $# -lt 3 ]];then
     echo "Usage: $0 type size howmany"
     exit 1
@@ -13,7 +13,7 @@ case $1 in
     "alpha") type="a-z";; #lower case
     "alphanum") type="a-z0-9";; # lower case
     "AlphaNum") type="A-Za-z0-9";; # upper and lower case
-    "all") type="A-Za-z0-9=;:\`\"<>,./?!@#$%^&(){}[]\-_+*";; # upper and lower case
+    "all") type="A-Za-z0-9=;:\`\"<>,./?!@#$%^&(){}[]\-_+*";; # upper and lower case plus symbols
 
     *) echo "Sorry. Not a valid type. Valid types are num, alpha, alphanum, AlphaNum(UPPER/lower/num), all"; exit 1;;
 esac
