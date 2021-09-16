@@ -1,0 +1,2 @@
+# grep for yesterdays' and today's date in a file, -c gets count of items
+grep -E "($(date -d '1 day ago' +%Y-%m-%d)|$(date +%Y-%m-%d))" filename -c
